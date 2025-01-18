@@ -6,7 +6,7 @@ export const Hero = () => {
   const ctaText = 'Download CV';
 
   return (
-    <section aria-label="hero" className="md:flex md:flex-row">
+    <section aria-label="hero" className="md:flex md:flex-row py-20">
       <div className="hero-content md:w-[48%] px-8 md:mt-10">
         <h1 className="hero-heading text-4xl md:text-[58px] tracking-wider font-bold text-white leading-[1.1] text-center md:text-left py-10" aria-label="heading">
           Hi, {hiringManager}, <br className="md:hidden"></br><span className="bg-[#6f66ff]">Hire me!</span>
@@ -15,9 +15,9 @@ export const Hero = () => {
           <source
             type="image/webp"
             media="(max-width:600px)"
-            srcSet="hero.webp"
+            srcSet="src/components/hero/assets/kevinNnoa.webp"
           />
-          <img loading="eager" decoding="async" src="src/components/hero/assets/kevinNnoa.webp" alt="" id="heroimg" className="border-2 border-white rounded-[20px] w-full h-full object-cover aspect-square" />
+          <img loading="eager" decoding="async" src="src/components/hero/assets/kevinNnoa.webp" alt="heroimg" id="heroimg" className="border-2 border-white rounded-[20px] w-full h-full object-cover aspect-square" />
         </picture>
         <p className="hero-subhead mt-5 md:m-0 mb-6 md:mb-6 md:py-[20px] text-lg md:text-2xl text-center md:text-left text-[#bfceff] font-normal" aria-label="subheading">
           I&apos;m Kevin Deal, Award winning Front-end Developer. I know I would be a great fit for {teamNeed}. I am up to the challenge. If you download my CV or checkout my work I think you will agree.
@@ -36,9 +36,9 @@ export const Hero = () => {
           <source
             type="image/webp"
             media="(max-width:600px)"
-            srcSet="hero.webp"
+            srcSet="src/components/hero/assets/kevinNnoa.webp"
           />
-          <img loading="eager" decoding="async" src="src/components/hero/assets/kevinNnoa.webp" alt="" id="heroimg" className="border-2 border-white rounded-[20px] w-full h-full object-cover" />
+          <img loading="eager" decoding="async" src="src/components/hero/assets/kevinNnoa.webp" alt="heroimg" id="heroimg" className="border-2 border-white rounded-[20px] w-full h-full object-cover" />
         </picture>
       </div>
     </section>
