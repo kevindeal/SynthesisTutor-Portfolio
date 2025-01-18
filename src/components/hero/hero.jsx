@@ -1,4 +1,6 @@
 
+import { TypeOutHeader } from "./TypeOutHeader";
+
 export const Hero = () => {
   const hiringManager = 'Clint Fix';
   const teamNeed = 'Frontend Developer role';
@@ -7,9 +9,9 @@ export const Hero = () => {
 
   return (
     <section aria-label="hero" className="md:flex md:flex-row py-20">
-      <div className="hero-content md:w-[48%] px-8 md:mt-10">
+      <div className="hero-content md:w-[48%] md:mt-10">
         <h1 className="hero-heading text-4xl md:text-[58px] tracking-wider font-bold text-white leading-[1.1] text-center md:text-left py-10" aria-label="heading">
-          Hi, {hiringManager}, <br className="md:hidden"></br><span className="bg-[#6f66ff]">Hire me!</span>
+          Hi, {hiringManager}, <br></br><TypeOutHeader text="Let&apos;s do this!" />
         </h1>
         <picture className="mobile-img md:hidden w-full h-[300px] md:h-[600px]">
           <source
@@ -22,9 +24,9 @@ export const Hero = () => {
         <p className="hero-subhead mt-5 md:m-0 mb-6 md:mb-6 md:py-[20px] text-lg md:text-2xl text-center md:text-left text-[#bfceff] font-normal" aria-label="subheading">
           I&apos;m Kevin Deal, Award winning Front-end Developer. I know I would be a great fit for {teamNeed}. I am up to the challenge. If you download my CV or checkout my work I think you will agree.
         </p>
-        <a href={ctaUrl} aria-label={ctaText} className="hero-cta w-full flex md:inline-block text-center md:text-left py-[20px]" download>
+        <a href={ctaUrl} aria-label={ctaText} className="hero-cta w-full flex flex-column text-center md:w-[250px] py-[20px]" download>
           <span
-            className="hero-button w-full md:w-auto gap-2 text-[#020718] bg-[#ffd000] bg-gradient-to-r from-[#fcd544] to-[#fa9a3d] border-none rounded-[15px] h-[55px] py-3 px-[30px] pr-[23px] text-[18.2px] font-semibold 
+            className="hero-button w-full gap-2 text-[#020718] bg-[#ffd000] bg-gradient-to-r from-[#fcd544] to-[#fa9a3d] border-none rounded-[15px] h-[55px] py-3 px-[30px] pr-[23px] text-[18.2px] font-semibold 
             hover:bg-gradient-to-r hover:from-[#ffe066] hover:to-[#fdbb42] transition-all duration-80"
           >
             {ctaText}
