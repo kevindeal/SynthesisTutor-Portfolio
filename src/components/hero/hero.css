@@ -11,3 +11,8 @@
   position: absolute;
   inset: 0%;
 }
+
+.type-span {
+  display: inline-block;
+  white-space: nowrap; /* Prevent wrapping */
+}

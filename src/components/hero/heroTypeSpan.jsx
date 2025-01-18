@@ -2,7 +2,7 @@ import  { useState, useEffect } from 'react';
 import { motion } from "framer-motion";
 import PropTypes from 'prop-types';
 
-export const TypeOutHeader = ({ text }) => {
+export const HeroTypeSpan = ({ text }) => {
   const [displayText, setDisplayText] = useState('');
 
   useEffect(() => {
@@ -21,14 +21,14 @@ export const TypeOutHeader = ({ text }) => {
     <motion.span 
     initial={{opacity: 0}} 
     animate={{ opacity: 1 }} 
-    className="bg-[#6f66ff]"
+    className="bg-[#6f66ff] type-span"
     >
       {displayText}
     </motion.span>
   )
 }
 
-TypeOutHeader.propTypes = {
+HeroTypeSpan.propTypes = {
   text: PropTypes.string.isRequired,
 };
 
