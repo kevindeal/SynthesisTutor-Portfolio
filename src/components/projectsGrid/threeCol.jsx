@@ -9,7 +9,7 @@ export const ThreeCol = () => {
       link: "https://admissions.pitt.edu/",
       tags: ["Vue.js", "JavaScript","Storybook"],
       backGround: "bg-yellow",
-      image: "src/components/projectsGrid/assets/Screenshot-2024-12-03-at-5.35.34 PM-2048x1035.png"
+      image: "/assets/Screenshot-2024-12-03-at-5.35.34 PM-2048x1035.png"
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ export const ThreeCol = () => {
       link: "https://github.com/kevindeal/pls/blob/main/PLS-WP/template-parts/blocks/clientProfile/courseDetail.php",
       tags: ["Grid.js", "PHP", "TailwindCss"],
       backGround: "bg-grayscale",
-      image: "src/components/projectsGrid/assets/Screenshot-2024-12-06-at-1.13.49 PM-2048x1003.png"
+      image: "/assets/Screenshot-2024-12-06-at-1.13.49 PM-2048x1003.png"
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ export const ThreeCol = () => {
       link: "https://github.com/kevindeal/TD-react-gutenberg/blob/main/wp-content/themes/td2024/blocks/src/hero/save.js",
       tags: ["React", "Wordpress", "ACF"],
       backGround: "bg-purple",
-      image: "src/components/projectsGrid/assets/Screenshot-2024-11-18-at-3.15.29 PM-1024x514.png"
+      image: "/assets/Screenshot-2024-11-18-at-3.15.29 PM-1024x514.png"
     }
   ];
 

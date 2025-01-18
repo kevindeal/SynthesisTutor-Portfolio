@@ -1,10 +1,11 @@
 
 import { HeroTypeSpan} from "./heroTypeSpan";
+import heroImage from '/assets/kevinNnoa.webp'
 
 export const Hero = () => {
   const hiringManager = 'Clint Fix';
   const teamNeed = 'Frontend Developer role';
-  const ctaUrl = 'src/components/hero/assets/KdforSynthesis.png';
+  const ctaUrl = '/assets/KdforSynthesis.png';
   const ctaText = 'Download CV';
 
   return (
@@ -24,12 +25,12 @@ export const Hero = () => {
           <source
             type="image/webp"
             media="(max-width:600px)"
-            srcSet="src/components/hero/assets/kevinNnoa.webp"
+            srcSet={heroImage}
           />
           <img
             loading="eager"
             decoding="async"
-            src="src/components/hero/assets/kevinNnoa.webp"
+            src={heroImage}
             alt="heroimg"
             id="heroimg"
             className="border-2 border-white rounded-[20px] w-full h-full object-cover aspect-square"
@@ -62,12 +63,12 @@ export const Hero = () => {
           <source
             type="image/webp"
             media="(max-width:600px)"
-            srcSet="src/components/hero/assets/kevinNnoa.webp"
+            srcSet={heroImage}
           />
           <img
             loading="eager"
             decoding="async"
-            src="src/components/hero/assets/kevinNnoa.webp"
+            src={heroImage}
             alt="heroimg"
             id="heroimg"
             className="border-2 border-white rounded-[20px] w-full h-full object-cover"
