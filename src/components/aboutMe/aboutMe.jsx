@@ -1,6 +1,6 @@
 import { Github, Linkedin, Download } from "lucide-react";
 import { SkillBar } from "../skillBar/skillBar";
-import avatar from '/assets/avatar.gif'
+import avatar from '/assets/avatar-ezgif.com-video-to-webp-converter.webp'
 
 export const AboutMe = () => {
   const skills = [
@@ -32,6 +32,8 @@ export const AboutMe = () => {
             <div className="relative w-32 h-32 lg:w-40 lg:h-40">
               <div className="absolute inset-0 bg-primary rounded-full opacity-10 animate-pulse" />
               <img
+                loading="eager"
+                decoding="async"
                 src={avatar}
                 alt="Kevin's profile"
                 className="rounded-full w-full h-full object-cover shadow-lg transform transition-transform duration-500 hover:scale-105"
