@@ -1,10 +1,10 @@
-
+import { Github, Linkedin, Download } from "lucide-react";
 import { HeroTypeSpan} from "./heroTypeSpan";
 import heroImage from '/assets/kevinNnoa.webp'
 
 export const Hero = () => {
   const hiringManager = 'Clint Fix';
-  const teamNeed = 'Frontend Developer role';
+  const teamNeed = 'Synthesis Frontend Engineer role';
   const ctaUrl = '/assets/KdforSynthesis.png';
   const ctaText = 'Download CV';
 
@@ -47,13 +47,14 @@ export const Hero = () => {
         <a
           href={ctaUrl}
           aria-label={ctaText}
-          className="hero-cta w-full flex flex-column text-center md:w-[250px] py-[20px]"
+          className="hero-cta w-full flex flex-column items-center justify-center text-center md:w-[250px] py-[20px]"
           download
         >
           <span
-            className="hero-button w-full gap-2 text-[#020718] bg-[#ffd000] bg-gradient-to-r from-[#fcd544] to-[#fa9a3d] border-none rounded-[15px] h-[55px] py-3 px-[30px] pr-[23px] text-[18.2px] font-semibold 
+            className="hero-button w-full flex items-center justify-center gap-2 text-[#020718] bg-[#ffd000] bg-gradient-to-r from-[#fcd544] to-[#fa9a3d] border-none rounded-[15px] h-[55px] py-3 px-[30px] pr-[23px] text-[18.2px] font-semibold 
             hover:bg-gradient-to-r hover:from-[#ffe066] hover:to-[#fdbb42] transition-all duration-80"
           >
+            <Download className="w-5 h-5" />
             {ctaText}
           </span>
         </a>
