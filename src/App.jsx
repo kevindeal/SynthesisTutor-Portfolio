@@ -5,6 +5,8 @@ import './App.css'
 import { AboutMe } from './components/aboutMe/aboutMe'
 import {Hero} from './components/hero/hero'
 import { ThreeCol } from './components/projectsGrid/threeCol'
+import { Footer } from './components/footer'
+
 // import { TabChart } from './components/tabChart/tabChart'
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
         <Hero/>
         <ThreeCol/>
         <AboutMe/>
+        <Footer/>
       </div> 
     </>
   )
