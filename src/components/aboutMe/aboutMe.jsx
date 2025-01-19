@@ -10,9 +10,9 @@ export const AboutMe = () => {
     { name: "Pickup Basketball", level: 80 },
   ];
   return (
-    <section className="min-h-screen pt-10 pb-20 sm:px-6 lg:px-8 relative">
-      <div className="border border-dashed rounded-[40px] p-6">
-        {/* <div className="overlay-component"></div> */}
+    <section className="min-h-screen pt-10 pb-20 sm:px-6 lg:px-8 relative ">
+      <div className="border-2 border-dashed rounded-[40px] p-6">
+        <div className="overlay-component"></div>
         <div className="heading-container text-center pt-[50px] mb-[10px]">
           <h1 className="text-4xl lg:text-5xl font-bold text-[#625ded]">
             Beyond the code.
