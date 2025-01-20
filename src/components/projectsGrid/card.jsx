@@ -1,7 +1,7 @@
 
 export const Card = ({ id, description, name, tags, link, backGround, image}) => {
   return (
-    <div className="project-grid grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div id={id} className="project-grid grid grid-cols-1 md:grid-cols-2 gap-4">
       <div
       className="project-grid-card gradient-background rounded-2xl border-1 min-h-[350px] flex flex-col col-span-2"
       key={id}

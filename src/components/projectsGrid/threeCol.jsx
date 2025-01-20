@@ -33,7 +33,7 @@ export const ThreeCol = () => {
 
 
   return (
-    <section className="py-20">
+    <section className="project-grid py-20">
       <h1 className="eyebrow section-head small-header grade font-bold text-[2rem] md:text-5xl text-center mb-6">Checkout my most proud work</h1>
       <h2 className="project-header text-[#b7d0ff] mt-[10px] text-xl text-center leading-[1.4]">
         With almost a decade of experience in digital, I have exceled at connecting users with products and brands through innovative and impactful solutions.
