@@ -6,6 +6,7 @@ export const AboutMe = () => {
   const skills = [
     { name: "Call of Duty", level: 85 },
     { name: "Fatherhood", level: 90 },
+    { name: "Youth Sports", level: 100},
     { name: "Gardening", level: 40 },
     { name: "Pickup Basketball", level: 80 },
   ];
@@ -15,7 +16,7 @@ export const AboutMe = () => {
   const linkedInUrl = 'https://www.linkedin.com/in/kevin-deal2/';
    
   return (
-    <section className="min-h-screen about-container pb-20 sm:px-6 lg:px-8">
+    <section className="min-h-screen about-container pb-20 sm:px-6 lg:px-8 relative">
       <div className="overlay-component"></div>
       <div className="border-2 border-dashed rounded-[40px] p-6 relative z-10">
         <div className="heading-container text-center pt-[50px] mb-[10px]">
@@ -27,23 +28,28 @@ export const AboutMe = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-6 gap-2 items-center">
-            {/* Image Column */}
-          <div className="flex justify-left lg:col-span-1 absolute -top-4 -left-10">
+          <div className="avatar-column flex justify-left lg:col-span-1 absolute -top-16 md:-top-4 -left-4 md:-left-10">
             <div className="relative w-32 h-32 lg:w-40 lg:h-40">
               <div className="absolute inset-0 bg-primary rounded-full opacity-10 animate-pulse" />
+              <picture>
+                <source 
+                  type="image/webp"
+                  media="(max-width:100px)"
+                  srcSet={avatar}
+                />
+              </picture>
               <img
                 loading="eager"
                 decoding="async"
                 src={avatar}
                 alt="Kevin's profile"
-                className="rounded-full w-full h-full object-cover shadow-lg transform transition-transform duration-500 hover:scale-105"
+                className="avatar-img rounded-full w-full h-full object-cover shadow-lg transform transition-transform duration-500 hover:scale-105"
               />
             </div>
           </div>
-          {/* Content Column */}
-          <div className="lg:col-span-6 max-w-[900px] mx-auto pb-[50px]">
-            {/* Skills */}
-            <div className="mb-8">
+          <div className="about-content lg:col-span-6 max-w-[900px] mx-auto pb-[50px]">
+
+            <div className="about-skills mb-8">
               {skills.map((skill) => (
                 <SkillBar
                   key={skill.name}
@@ -52,8 +58,7 @@ export const AboutMe = () => {
                 />
               ))}
             </div>
-            {/* CTAs */}
-            <div className="flex flex-wrap items-center justify-center gap-4">
+            <div className="about-cta flex flex-wrap items-center justify-center gap-4">
               <a
                 href={resumeUrl}
                 download
