@@ -10,6 +10,17 @@
   pointer-events: none;
 }
 
+@media (max-width: 768px) {
+  .overlay-component {
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+}
+
 .about-container {
   position: relative;
   max-width: 100vw;

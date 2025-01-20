@@ -25,7 +25,8 @@ export const Hero = () => {
           <source
             type="image/webp"
             media="(max-width:600px)"
-            srcSet={heroImage}
+            srcSet={`${heroImage} 600w`}
+            sizes="(max-width: 600px) 100vw, 600px"
           />
           <img
             loading="eager"
@@ -63,8 +64,9 @@ export const Hero = () => {
         <picture className="w-full hidden md:block h-[600px]">
           <source
             type="image/webp"
-            media="(max-width:600px)"
-            srcSet={heroImage}
+            media="(min-width:601px)"
+            srcSet={`${heroImage} 1200w`}
+            sizes="(min-width: 601px) 50vw, 1200px"
           />
           <img
             loading="eager"
