@@ -8,8 +8,8 @@ export const SkillBar = ({ skill, percentage }) => {
   return (
     <div className="mb-6">
       <div className="flex justify-between mb-1">
-        <span className="text-[21px]  font-semibold text-[b7d0ff]">{skill}</span>
-        <span className="text-[21px] text-bg-green">{percentage}%</span>
+        <span className="text-[21px]  font-semibold text-[#b7d0ff]">{skill}</span>
+        <span className="text-[21px] text-white">{percentage}%</span>
       </div>
       <div className="h-2.5 bg-[#17357d] rounded-full overflow-hidden">
         <div
