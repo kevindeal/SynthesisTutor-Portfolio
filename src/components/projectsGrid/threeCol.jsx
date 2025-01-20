@@ -42,6 +42,7 @@ export const ThreeCol = () => {
         {projects.map((project) => (
           <Card
             key={project.id}
+            id={project.id}
             name={project.name}
             description={project.description}
             tags={project.tags}
