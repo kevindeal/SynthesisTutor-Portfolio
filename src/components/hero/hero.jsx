@@ -9,27 +9,28 @@ link.href = heroImage;
 document.head.appendChild(link);
 
 export const Hero = () => {
-  const hiringManager = 'Clint Fix';
+  const hiringManager = 'Clint';
   const teamNeed = 'Synthesis Frontend Engineer role';
   const ctaUrl = '/assets/KdforSynthesis.png';
   const ctaText = 'Download CV';
 
   return (
     <section aria-label="hero" id="hero" className="md:flex md:flex-row py-20">
-      <div className="hero-content md:w-[48%] px-8 md:mt-10">
+      <div className="hero-content md:w-[48%] px-8">
         <h1
-          className="hero-heading text-4xl md:text-[58px] tracking-wider font-bold text-white leading-[1.1] text-center md:text-left py-10"
+          className="hero-heading text-4xl md:text-[58px] tracking-wide font-bold text-white leading-[1.1] text-center md:text-left md:py-10"
           aria-label="heading"
         >
-          Hi, {hiringManager},
+          Hi, {hiringManager}, I would love to be
           <br />
           <div className="relative" style={{ minHeight: '1.2em' }}>
-            <HeroTypeSpan text="Let&apos;s do this!" />
+            <HeroTypeSpan text="The Frontend Engineer" />
+            <p>for Synthesis</p>
           </div>
         </h1>
-        <picture className="mobile-img md:hidden w-full h-[300px] md:h-[600px]">
+        <picture className="mobile-img mt-10 md:hidden inline-block w-full h-[300px] md:h-[600px] border-2 border-white rounded-[20px] overflow-hidden">
           <source
-            type="image/webp"
+            type="image/webp" 
             media="(max-width:600px)"
             srcSet={`${heroImage} 600w`}
             sizes="(max-width: 600px) 100vw, 600px"
@@ -40,15 +41,14 @@ export const Hero = () => {
             src={heroImage}
             alt="heroimg"
             id="heroimg"
-            className="border-2 border-white rounded-[20px] w-full h-full object-cover aspect-square"
+            className="w-[110%] object-cover -m-[2.5%]"
           />
         </picture>
         <p
           className="hero-subhead mt-5 md:m-0 mb-6 md:mb-6 md:py-[20px] text-lg md:text-2xl text-center md:text-left text-[#bfceff] font-normal"
           aria-label="subheading"
         >
-          I&apos;m Kevin Deal, Award winning Frontend Developer. I know I
-          would be a great fit for the {teamNeed}. I am up to the challenge. If you
+          I&apos;m Kevin Deal, Award winning Frontend Developer. My love for teaching the youth and My frontend development experience collaborating with content authors make me a fit for the {teamNeed}. I am up to the challenge and have the thick skin to take feedback and adjust on the fly. If you
           download my CV or checkout my work I think you will agree.
         </p>
         <a
@@ -67,7 +67,7 @@ export const Hero = () => {
         </a>
       </div>
       <div className="md:w-1/2 flex">
-        <picture className="w-full hidden md:block h-[600px]">
+        <picture className="w-full border-2 border-white rounded-[20px]  hidden md:block h-[600px] relative overflow-hidden">
           <source
             type="image/webp"
             media="(min-width:601px)"
@@ -80,7 +80,7 @@ export const Hero = () => {
             src={heroImage}
             alt="heroimg"
             id="heroimg"
-            className="border-2 border-white rounded-[20px] w-full h-full object-cover"
+            className="w-[110%] object-cover -m-[2.5%]"
           />
         </picture>
       </div>

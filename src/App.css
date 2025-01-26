@@ -25,3 +25,7 @@
   width: 100vw;
   pointer-events: none;
 }
+
+img, video {
+  max-width: none!important;
+}
