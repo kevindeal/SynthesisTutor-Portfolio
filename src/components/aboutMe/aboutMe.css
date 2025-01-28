@@ -22,6 +22,12 @@
 }
 
 .about-container {
+  background-image: url('/assets/dashed-grid.svg');
+  background-position: 0%;
+  background-size: cover;
+  border: 1px dashed #96a9e2d9;
+  border-radius: 40px;
+  padding-top: 50px;
+  padding-right: 0;
   position: relative;
-  max-width: 100vw;
 }
