@@ -16,7 +16,7 @@ export const Hero = () => {
 
   return (
     <section aria-label="hero" id="hero" className="hero relative bg-overlay py-20">
-      <div className="container md:flex md:flex-row gap-6">
+      <div className="container md:flex md:flex-row gap-16">
         <div className="hero-content z-10 flex-1">
           <h1
             className="hero-heading text-4xl md:text-[58px] tracking-wide font-bold text-white leading-[1.1] text-center md:text-left md:py-10"
@@ -26,7 +26,7 @@ export const Hero = () => {
             <br />
             <div className="relative" style={{ minHeight: '1.2em' }}>
               <HeroTypeSpan text="Frontend Engineer" />
-              <p>for Synthesis</p>
+              <p>for Synthesis.</p>
             </div>
           </h1>
           <picture className="mobile-img mt-10 md:hidden inline-block w-full h-auto aspect-w-16 aspect-h-9 border-2 border-white rounded-[20px] overflow-hidden">
