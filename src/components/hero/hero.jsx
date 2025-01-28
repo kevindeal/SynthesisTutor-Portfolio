@@ -16,13 +16,13 @@ export const Hero = () => {
 
   return (
     <section aria-label="hero" id="hero" className="hero relative bg-overlay py-20">
-      <div className="container md:flex md:flex-row gap-16">
+      <div className="container md:flex md:flex-row gap-10">
         <div className="hero-content z-10 flex-1">
         <h1
-          className="hero-heading text-4xl md:text-[58px] tracking-wide font-bold text-white leading-[1.1] text-center md:text-left md:py-10"
+          className="hero-heading text-4xl md:text-[58px] tracking-wide font-bold text-white leading-[1.1] text-center md:text-left md:pb-10"
           aria-label="heading"
         >
-          Hi, {hiringManager}. I would love to become the next
+          Hi, {hiringManager}.<br></br> I would love to be the next
           <br />
           <div className="relative" style={{ minHeight: '1.2em' }}>
             <HeroTypeSpan text="Frontend Engineer" />
