@@ -13,7 +13,8 @@ function App() {
 
   return (
     <>
-      <div className='hero-bg-overlays'>
+      <div>
+        <div className=""></div>
         <Hero/>
         <ThreeCol/>
         <AboutMe/>

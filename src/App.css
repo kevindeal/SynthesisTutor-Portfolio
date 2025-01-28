@@ -4,12 +4,9 @@
 
 @import "components/projectsGrid/projectGrid.css";
 @import "components/aboutMe/aboutMe.css";
+@import "components/hero/hero.css";
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-}
+
 
 .footer-line {
   background-image: linear-gradient(90deg, #38d3ff00, #fff3 50%, #38d3ff00);
@@ -20,11 +17,22 @@
 
 .footer-overlay-component {
   background: #010d29;
-  position: absolute;
+  position: relative;
   left: 0;
+  right: 0;
   width: 100vw;
-  pointer-events: none;
+  margin-left: calc(-50vw + 50%);
 }
+
+.full-bleed-bg {
+  background: #010c27;
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
 
 img, video {
   max-width: none!important;
