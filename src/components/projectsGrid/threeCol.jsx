@@ -5,7 +5,7 @@ export const ThreeCol = () => {
     {
       id: 1,
       name: "Upitt Admissons",
-      description: "Created reusable components and iterated in Qa on an award winning design system using Vue.js. Showcasing my ability to pick up new tooling and create custom interactive widgets and scalable solutions that drive efficiency and elevate user experiences.",
+      description: "Re-Imagined college Admissions for Gen-Z. This was an oppurtunity to pick up new tooling with VueJS and run. The components I built for our reusable library not only won A W3 award for best admissions site. The design system brought life to something as boring as college admissions and made a connection to users of a younger generation facing the challenge of going to college for the first time at home.",
       link: "https://admissions.pitt.edu/",
       tags: ["Vue.js", "JavaScript","Storybook"],
       backGround: "bg-yellow",
@@ -14,8 +14,8 @@ export const ThreeCol = () => {
     },
     {
       id: 2,
-      name: "Police Legal Sciences",
-      description: "Designed and built custom template parts for an LMS dashboard in php using grid.js, javascript, php and styled with TailwindCSS. Creating courses for over 10k adult users, similarly to how you all do at Synthesis.",
+      name: "Custom LMS",
+      description: "Stopped users from cheating their trainings.  Provided Frontend leadership to design and build a LMS that prevented users from cheating. Working alongside a backend dev I guided them through wordpress and all its capabilites. Learned a ton about the backend through thorough code reviews and reverse engineering a popular wordpress plugin.",
       link: "https://github.com/kevindeal/pls/blob/main/PLS-WP/template-parts/blocks/clientProfile/courseDetail.php",
       tags: ["Grid.js", "PHP", "TailwindCss"],
       backGround: "bg-grayscale",
@@ -25,7 +25,7 @@ export const ThreeCol = () => {
     {
       id: 3,
       name: "Treasure Data",
-      description: "A deep dive into React based gutenberg blocks in wordpress. Built a highly customizable hero component in ReactJS and styled with tailwindCss. Again picking up new tooling and delivering in a fast pased environment as described in the role description there at Synthesis.",
+      description: "200 hours of work in Qa. Had to zero in on communication with indecisive stake holders. Learned the importance of writing documentation and formal recommendations and reports. Broke down large stories in Jira to give simplicity to complex issues across the product.",
       link: "https://github.com/kevindeal/TD-react-gutenberg/blob/main/wp-content/themes/td2024/blocks/src/hero/save.js",
       tags: ["React", "Wordpress", "ACF"],
       backGround: "bg-purple",

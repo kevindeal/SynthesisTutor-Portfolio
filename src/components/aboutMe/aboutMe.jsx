@@ -11,7 +11,7 @@ export const AboutMe = () => {
     { name: "Pickup Basketball", level: 80 },
   ];
 
-  const resumeUrl = '/assets/KdforSynthesis.png';
+  const resumeUrl = '/assets/kdResume-1.png';
   const githubUrl = 'https://github.com/kevindeal';
   const linkedInUrl = 'https://www.linkedin.com/in/kevin-deal2/';
    

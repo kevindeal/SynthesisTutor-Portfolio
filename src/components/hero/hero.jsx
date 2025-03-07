@@ -1,4 +1,4 @@
-import { Github, Linkedin, Download } from "lucide-react";
+import { Download } from "lucide-react";
 import { HeroTypeSpan} from "./heroTypeSpan";
 import heroImage from '/assets/kevinNnoa.webp';
 
@@ -9,9 +9,9 @@ link.href = heroImage;
 document.head.appendChild(link);
 
 export const Hero = () => {
-  const hiringManager = 'Clint';
-  const teamNeed = 'Synthesis Frontend Engineer role';
-  const ctaUrl = '/assets/KdforSynthesis.png';
+  const hiringManager = 'Comcast';
+  const teamNeed = 'Comcast Frontend Engineer role';
+  const ctaUrl = '/assets/kdResume-1.png';
   const ctaText = 'Download CV';
 
   return (
@@ -26,7 +26,7 @@ export const Hero = () => {
           <br />
           <div className="relative" style={{ minHeight: '1.2em' }}>
             <HeroTypeSpan text="Frontend Engineer" />
-            <p style={{ whiteSpace: 'nowrap' }}>for Synthesis.</p>
+            <p style={{ whiteSpace: 'nowrap' }}>for Comcast.</p>
           </div>
         </h1>
           <picture className="mobile-img mt-10 md:hidden inline-block w-full h-auto aspect-w-16 aspect-h-9 border-2 border-white rounded-[20px] overflow-hidden">
@@ -49,8 +49,7 @@ export const Hero = () => {
             className="hero-subhead mt-5 md:m-0 mb-6 md:mb-6 md:py-[20px] text-lg md:text-2xl text-center md:text-left text-[#bfceff] font-normal"
             aria-label="subheading"
           >
-            I&apos;m Kevin Deal, Award winning Frontend Developer. My love for teaching the youth and my frontend development experience collaborating with global teams makes me excited about the {teamNeed}. I am up to the challenge and have the thick skin to take feedback and adjust on the fly. If you
-            download my CV or checkout my work I think you will agree.
+            I&apos;m Kevin Deal, Award winning Frontend Developer. I have collaborated with some of the best agencies and developers in the world that has prepared me for the {teamNeed}. I am up to the challenge of being the Frontend expert and go to for my team. Looking forward to doing the best work of my career with Comcast. 
           </p>
           <a
             href={ctaUrl}
